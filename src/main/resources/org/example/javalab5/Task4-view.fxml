@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="200.0" prefWidth="400.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javalab5.Task4Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <HBox alignment="CENTER" spacing="10.0">
+            <children>
+                <TextField fx:id="num1Field" promptText="Число 1" />
+                <TextField fx:id="num2Field" promptText="Число 2" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" spacing="10.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#add" text="+" />
+                <Button mnemonicParsing="false" onAction="#subtract" text="-" />
+                <Button mnemonicParsing="false" onAction="#multiply" text="*" />
+                <Button mnemonicParsing="false" onAction="#divide" text="/" />
+            </children>
+        </HBox>
+        <Label fx:id="resultLabel" text="Результат: " />
+    </children>
+</VBox>
